@@ -1,0 +1,70 @@
+&-applied {
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px 5px;
+
+    h3 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+        margin-bottom: 8px;
+    }
+
+    &-box {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid $gray-light;
+        padding: 5px;
+
+        span {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.1px;
+            color: $gray-dark;
+        }
+
+        a {
+            border-radius: 7px;
+            background-color: rgb(36, 36, 36);
+            padding: 5px;
+            border: none;
+            color: $white;
+            text-decoration: none;
+            margin-right: 5px;
+
+            svg {
+                font-size: 14px;
+                color: $white;
+            }
+        }
+    }
+
+    &-clean {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        text-decoration: none;
+        margin-top: 10px;
+        color: $gray-dark;
+        display: block;
+        text-align: right;
+    }
+    
+    @media(max-width: 800px) {
+        
+        display: none;
+        &-box {
+            button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: none;
+                border: none;
+                font-size: 24px;
+            }
+        }
+    }
+}

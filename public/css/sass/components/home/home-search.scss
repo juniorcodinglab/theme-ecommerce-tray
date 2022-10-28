@@ -1,0 +1,62 @@
+&__search {
+    margin-top: 55px;
+    &-guia {
+        ul {
+            display: flex;
+            li {
+                border-radius: 20px 20px 0 0;
+                padding: 15px 20px;
+                color: $white;
+                background-color: $gray-dark;
+                cursor: pointer;
+                @include font($white, 500, 16px, 100%);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                &.active {
+                    filter: none;
+                    background-color: $gray-darker;
+                }   
+            }
+        }
+    }
+    &-content {
+        background-color: $gray-darker;
+        padding: 30px 0;
+        border-radius: 0px 16px 16px 16px;
+
+        .item {
+            display: none;
+            &.active {
+                padding: 20px 0;
+                display: block;
+            }
+            form {
+                display: flex;
+                margin: 0 auto;
+                width: 70%;
+            }
+            input {
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                width: 70%;
+                padding: 10px 15px;
+                border-radius: 4px 0 0 4px;
+                @include font(#8D8D8D, 500, 16px, 100%);
+            }
+            button {
+                background-color: $orange;
+                padding: 14px 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 0 4px 4px 0;
+                
+                @include font($white, 400, 20px, 100%);
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+}

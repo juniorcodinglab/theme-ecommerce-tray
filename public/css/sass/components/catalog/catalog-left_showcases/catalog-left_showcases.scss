@@ -1,0 +1,9 @@
+&-left_showcases {
+    &-title {
+        font-size: 21px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+   @import "catalog-left_showcases-item/left_showcases-item";
+}

@@ -1,0 +1,14 @@
+&-content {
+    &-top {
+        padding: 5px 0 20px 0;
+
+        @import "catalog-content-item";
+    }
+
+    @media(max-width: 800px) {
+        &-top {
+            padding: 5px 0 20px 0;
+            flex-direction: column;
+        }
+    }
+}

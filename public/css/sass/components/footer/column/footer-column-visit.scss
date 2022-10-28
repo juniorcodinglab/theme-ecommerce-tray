@@ -1,0 +1,21 @@
+&-visit {
+    margin-top: 70px;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;	
+    padding: 10px;
+    a {
+        color: $red;
+    }
+
+    @media (max-width: 767px) {
+
+
+    }
+}

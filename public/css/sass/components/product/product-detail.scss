@@ -1,0 +1,452 @@
+&-detail {
+    .form_buy {
+        &-ref {
+            color: #808080;
+            font-size: 10px;
+        }
+        &-name {
+            font-size: 21px;
+            font-weight: 900;
+            letter-spacing: -0.8px;
+            line-height: 28px;
+        }
+        &-available {
+            margin-top: 10px;
+            svg {
+                color: #D9D9D9;
+
+            }
+            span {
+                color: #494949;
+                font-size: 11px;;
+            }
+        }
+        &-button {
+            .tray-buy-button {
+                #quantidade {
+                    label.color {
+                        font-size: 12px;
+                        color: #000;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        padding-right: 20px;
+                        position: relative;
+                        button {
+                            position: absolute;
+                            top: 50%;
+                            font-size: 20px;
+                            font-weight: bold;
+                            transform: translateY(-50%);
+                            border: none;
+                            outline: none;
+                            background: none;
+                            &#minus {
+                                right: 30px;
+                            }
+                            &#plus {
+                                right: 95px;
+                            }
+                        }
+                        input#quant {
+                            border: 1px solid #A5A5A5;
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 10px;
+                            margin-left: 10px;
+                            font-weight: 500;
+                            width: 100px;
+                        }
+                    }
+                    #estoque_variacao {
+                        display: none;
+                    }
+                }
+                #bt_comprar {
+                    .botao-comprar {
+                        width: 100%;
+                        background: #000;
+                        border: 2px solid #000;
+                        outline: none;
+                        font-size: 0px;
+                        padding: 10px;
+                        margin-top: 20px;
+                        &:before {
+                            content: "Adicionar ao carrinho";
+                            color: #FFF;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        a {
+            color: $gray-dark;
+
+            i {
+                font-size: 18px;
+                margin-left: 5px;
+            }
+        }
+
+    }
+
+    h1 {
+        font-family: Exo;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+        text-align: left;
+        padding-right: 40px;
+    }
+
+    &-available {
+        margin-top: 5px;
+
+        i {
+            letter-spacing: -4px;
+            font-size: 16px;
+            color: #E4E4E4;
+        }
+
+        i.active {
+            color: $yellow;
+        }
+
+        span {
+            font-size: 13px;
+            vertical-align: middle;
+            color: $gray-dark;
+            margin-left: 10px;
+        }
+    }
+
+    &-price {
+        margin-top: 20px;
+
+        #product-priceBox {
+            br {
+                display: none;
+            }
+
+            .produto-bonus {
+                display: none;
+            }
+
+            #produto_preco {
+                .txt-por {
+                    display: none;
+                }
+
+                .PrecoPrincipal {
+                    * {
+                        color: $red;
+                        font-family: Exo;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 32px;
+                        line-height: 32px;
+                        letter-spacing: -0.4px;
+                    }
+                }
+
+                #info_preco {
+                    font-size: 13px;
+                    line-height: 18px;
+                    letter-spacing: -0.1px;
+                    color: $gray-dark;
+                }
+            }
+
+            #info {
+                display: none;
+            }
+        }
+
+        >a {
+            margin-left: 5px;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.1px;
+            text-decoration-line: underline;
+            color: $gray-dark;
+        }
+    }
+
+    &-installments {
+        span {}
+    }
+
+    &-info {
+        margin-top: 25px;
+
+        p {
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: normal;
+            letter-spacing: -0.2px;
+            color: $gray-dark;
+        }
+    }
+
+    &-variant {
+        margin-top: 25px;
+
+        .show_size_and_color_type {
+            .texto_variacao {
+                margin-top: 0;
+                display: none;
+            }
+
+            .lista_cor_variacao {
+                li.sem_estoque {
+                    display: none;
+                }
+
+                li {
+                    vertical-align: middle;
+
+                    >div {
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 22px;
+                        letter-spacing: -0.2px;
+                        border: 1px solid $gray-dark;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 22px;
+                        letter-spacing: -0.1px;
+                        color: $black;
+                        padding: 10px;
+                        margin-right: 5px;
+                        background-color: white;
+                        cursor: pointer;
+
+                        &.cor_selecionada,
+                        &:hover {
+                            margin-right: 5px !important;
+                            border: 1px solid $gray-dark  !important;
+                            color: white;
+                            background-color: $red-dark;
+                        }
+                    }
+                }
+            }
+        }
+
+        label {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $gray-dark;
+        }
+
+        >.d-flex {
+            button {}
+        }
+    }
+
+    &-buy {
+        margin-top: 25px;
+
+        .unavailable {
+            width: 100%;
+            display: block;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $gray-dark;
+        }
+
+        #product-form-box {
+            display: flex;
+
+            #quantidade {
+                width: 150px;
+
+                label.color {
+                    font-size: 0px;
+                    display: flex;
+                }
+
+                .quantity-button {
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
+                    text-align: center;
+                    padding: 8px;
+
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: $gray-dark;
+                    border: 1px solid $gray-dark;
+                }
+
+                .quantity-down {
+                    float: left;
+                    width: 40px;
+                    border-radius: 6px 0 0 6px;
+                    border: 1px solid $gray-dark;
+                }
+
+                .quantity-up {
+                    float: left;
+                    width: 40px;
+                    border-radius: 0 6px 6px 0;
+                }
+
+                #quant::-webkit-inner-spin-button,
+                #quant::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                #quant {
+                    -moz-appearance: textfield;
+                    display: block;
+                    width: 45px;
+                    height: 42px;
+                    font-size: 16px;
+                    line-height: 1.65;
+                    text-align: center;
+                    font-weight: 600;
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+                    border-top: 1px solid $gray-dark;
+                    border-bottom: 1px solid $gray-dark;
+
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            }
+
+            #bt_comprar {
+                button {
+                    display: block;
+                    background: #039800;
+                    cursor: pointer;
+                    display: block;
+                    border: none;
+                    text-transform: capitalize;
+                    width: 215px;
+                    padding: 7px 0;
+                    border-radius: 6px;
+                    align-items: center;
+
+                    span {
+                        letter-spacing: -0.1px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+
+        label {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $gray-dark;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        .quantity {
+            position: relative;
+            display: flex;
+
+        }
+    }
+
+    &-cep {
+        margin-top: 25px;
+
+        #cepbox {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $gray-dark;
+        }
+
+        input {
+            padding: 5px 11px;
+            display: inline-block;
+
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: normal;
+            color: #6C7481;
+            border: 1px solid silver;
+        }
+
+        #cep1 {
+            width: 90px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #cep2 {
+            width: 60px;
+            border-radius: 5px 0 0 5px;
+            border-right: none;
+        }
+
+        .botao-simular-frete {
+            margin: 0;
+            background: #FFF;
+            color: $gray-dark;
+            border: 1px solid silver;
+            padding: 6px 15px;
+            display: block;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .cep-naosei {
+            margin-left: 5px;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            display: inline-block;
+            letter-spacing: -0.1px;
+            text-decoration-line: underline;
+            color: $gray-dark;
+        }
+    }
+}

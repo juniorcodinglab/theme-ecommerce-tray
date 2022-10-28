@@ -1,0 +1,27 @@
+.home {
+
+    .container-fluid {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        max-width: 1400px !important;
+    }
+    @import "home-slideTop";
+    @import "home-infoBox";
+    @import "home-search";
+    @import "home-banners";
+    @import "home-cars";
+    @import "home-categories";
+    @import "home-showcases";
+    @import "home-filletBanner";
+    @import "home-bannerFull";
+
+    @import "../slick/slick-fullSlide";
+    
+    @media (max-width: 800px) {
+        .container-fluid {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+    
+}

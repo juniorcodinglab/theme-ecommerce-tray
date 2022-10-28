@@ -1,0 +1,18 @@
+&-thumb {
+    position: relative;
+    &-discount {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        display: block;
+        background: #211e1e;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 9px;
+        border-radius: 12px;
+    }
+    img {
+        width: 100%;
+    }
+}

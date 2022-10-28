@@ -1,0 +1,47 @@
+.item {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    //padding: 10px;
+    overflow: hidden;
+    &:hover { 
+        z-index: 5;
+        position: relative;
+        overflow: visible;
+        .item-box {
+            position: absolute;
+        }
+        .item-buy {
+            height: auto;
+            overflow: visible;
+        }
+    }
+    &-box {
+        padding: 20px;
+        max-width: 248px;
+        min-height: 290px;
+        border-radius: 8px;
+        border: 2px solid $gray-lighter;
+        a {
+            display: block;
+            text-decoration: none;
+        }
+    }
+
+    @import "showcase-item-thumb";
+    @import "showcase-item-deadline";
+    @import "showcase-item-buy";
+
+
+    @media (max-width: 800px) {
+        padding: 5px;
+        &:hover {
+            .item-box {
+                box-shadow: none;
+            }
+        }
+        &-box {
+            padding: 0;
+        }
+    }
+}

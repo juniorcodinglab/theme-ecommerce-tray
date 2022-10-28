@@ -1,0 +1,125 @@
+&-desktop {
+    display: flex;
+    .col-12 {
+        display: flex;
+    }
+    &-search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-left: 20px;
+
+        input {
+            position: absolute;
+            width: 100%;
+            background-color: $gray-lighter;
+            border: none;
+            border-radius: 8px;
+
+            @include font($gray-dark, 500, 16px, 100%);
+
+            height: 45px;
+            padding: 5px;
+            padding-left: 20px;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+        button {
+            outline: none;
+            border: none;
+            background: none;
+            height: 45px;
+            position: absolute;
+            right: 0;
+            width: 45px;
+            border-radius: 50%;
+            i {
+                font-size: 25px;
+                color: $orange;
+            }
+        }
+    }
+    .d-flex {
+        justify-content: flex-end;
+        width: 100%;
+    }
+    &-login {
+        a {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            padding: 10px;
+            border: 3px solid $gray-lighter;
+            border-radius: 8px;
+            margin-right: 10px;
+            i {
+                font-size: 20px;
+                color: $gray-dark;
+            }
+            span {
+                @include font($gray-dark, 400, 16px, 100%);
+            }
+            &:hover {
+                background-color: $orange;
+                transition: .5s ease all;
+                span {
+                    @include font($white, 400, 16px, 100%);
+                }
+                i {
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-cart {
+        a {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            padding: 10px;
+            border: 3px solid $gray-lighter;
+            border-radius: 8px;
+            margin-right: 10px;
+            i {
+                font-size: 20px;
+                color: $gray-dark;
+            }
+            span {
+                @include font($white, 700, 16px, 100%);
+                background-color: $orange;
+                border-radius: 4px;
+                padding: 2px 10px;
+            }
+        }
+    }
+    &.active {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 10px;
+        top: 0;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: .5s ease all;
+        background-color: #FFF;
+
+        .header__main-desktop-search {
+            input {
+                height: 50px;
+                padding: 10px 20px;
+            }
+            button {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        display: none;
+    }
+    
+}

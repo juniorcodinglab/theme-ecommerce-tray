@@ -1,0 +1,28 @@
+&__top {
+    width: 100%;
+    background-color: $gray-dark;
+    &-slick {
+        .item {
+            text-align: center;
+            padding: 7px;
+            @include font($white, 400, 16px, 100%);
+            
+            strong {
+                font-weight: 600;
+            }
+            &__emphasis {
+                @include font($orange, 600, 16px, 100%);
+            }
+        }
+    }
+    &-whats {
+        padding: 7px;
+        text-align: right;
+        @include font($white, 400, 16px, 100%);
+
+        @include for-phone-only {
+            display: none;
+        }
+    }
+    
+}

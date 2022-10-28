@@ -1,0 +1,7 @@
+&-products {
+    padding: 10px;
+    flex-wrap: wrap;
+
+    @import "catalog-products-item/catalog-item";
+    
+}

@@ -1,0 +1,17 @@
+.blurry {
+    display: none;
+    min-height: 0;
+    backdrop-filter: none;
+    width: 100vw;
+    position: absolute;
+    background: rgba(0,0,0,.2);
+    top: 0;
+    z-index: 10;
+    transition: 2s all ease;
+    &.active {
+        
+        display: block;
+        min-height: 10000vh;
+        backdrop-filter: blur(10px);
+    }
+}

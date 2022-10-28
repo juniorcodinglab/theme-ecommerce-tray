@@ -1,0 +1,27 @@
+&-link {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    a {
+        color: #DADFE8;
+        i {
+            margin-right: 5px;
+            width: 20px;
+            font-size: 18px;
+            display: inline-block;
+            color: white;
+        }
+
+        .icon-mail-footer {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+        a {
+            color: #DADFE8;
+        }
+    }
+}

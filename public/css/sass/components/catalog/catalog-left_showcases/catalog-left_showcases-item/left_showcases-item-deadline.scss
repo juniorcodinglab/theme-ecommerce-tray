@@ -1,0 +1,43 @@
+&-infos {
+    h3 {
+        margin: 10px 0;
+        min-height: 50px;
+        text-align: center;
+        color: #000;
+        display: block;
+        font-size: 14px;
+    }
+    &-price {
+        display: block;
+        width: 100%;
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        color: #000;
+    }
+    &-deadlines {
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        color: #000;
+        min-height: 60px;
+        text-align: center;
+        b {
+            font-size: 15px;
+            color: #969696;
+            font-weight: 700;
+        }
+    }
+    @media (max-width: 800px) {
+        h3 {
+            font-size: 16px;
+        }
+        &-deadlines {
+            font-size: 12px;
+            b {
+                font-size: 15px;
+            }
+        }
+    }
+}

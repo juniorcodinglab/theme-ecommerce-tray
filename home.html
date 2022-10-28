@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/js/vendor/slick/slick.css" />
+        <link rel="stylesheet" href="public/css/fonts/remixicon/remixicon.css">
+		<link rel="stylesheet" href="public/css/home.min.css" />
+		<title>Home - RVTech</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <div class="header__top-slick">
+                                <div class="item">
+                                    Promo especial para <strong>carros clássicos</strong> | Pague com PIX e ganhe <span class="item__emphasis">10% de desconto</span>.
+                                </div>
+                                <div class="item">
+                                    <strong>12% Off</strong> na loja toda! Exceto em lançamentos! Cupom:
+                                    <span class="item__cupom">CUPOM12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="header__top-whats">
+                                <i class="ri-whatsapp-fill"></i>
+                                <span> Whatsapp: (18) 99796-0105</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+			</div>
+			<div class="header__main">
+				<div class="header__main-desktop">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div class="d-none d-md-block">
+									<img
+										src="./public/img/header/logo-desktop.svg"
+										alt=""
+										class="header__main-desktop-logo"
+									/>
+								</div>
+								<div class="d-block d-md-none">
+									<img
+										src="./public/img/logo-mob.png"
+										alt=""
+										class="header__main-desktop-logo"
+									/>
+								</div>
+                                <div class="header__main-desktop-search">
+									<input type="text" placeholder="Busque Aqui"/>
+									<button><i class="ri-search-line"></i></button>
+								</div>
+							</div>
+		
+							<div class="col-12 col-md-6">
+								<div class="d-flex">
+									<div class="header__main-desktop-login">
+										<a href="#">
+											<i class="ri-user-fill"></i>
+											<span>Minha Conta</span>
+										</a>
+									</div>
+
+                                    <div class="header__main-desktop-cart">
+										<a href="#">
+											<i class="ri-shopping-cart-2-fill"></i>
+											<span>5</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__main-moblie">
+					<div class="d-flex">
+						<div class="header__main-moblie-bar">
+							<button><i class="fas fa-bars"></i></button>
+						</div>
+						<div class="header__main-moblie-logo">
+							<img src="./public/img/header/logo-moblie.svg" alt="Logo" />
+						</div>
+						<div class="header__main-moblie-search">
+							<button><i class="fas fa-search"></i></button>
+						</div>
+						<div class="header__main-moblie-cart">
+							<button><i class="fas fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<div class="header__main-moblie-input d-none">
+						<div class="position-relative d-flex">
+							<div class="input">
+								<button class="header__main-moblie-input-search">
+									<i class="fas fa-search"></i>
+								</button>
+								<input type="text" />
+							</div>
+							
+							<button class="header__main-moblie-input-close">
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav">
+				<nav class="header__nav-desk">
+					<ul>
+						<li>
+							<a href="#">
+                                <img src="public/img/header/icon-menu_car-sound.svg" alt=".">
+                                <span>Som e Vídeo Automotivo</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/alarm.svg" alt=".">
+                                <span>Seguranças e Alarmes</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/Eletric.svg" alt=".">
+                                <span>Elétrica</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/menu_car-light.png" alt=".">
+                                <span>Iluminação Automotiva</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/menu_car-volant.png" alt=".">
+                                <span>Acessórios Internos</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/menu_car-classic.png" alt=".">
+                                <span>Acessórios externos</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/menu_car-tires.png" alt=".">
+                                <span>Rodas e Calotas</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/menu_car-wash.png" alt=".">
+                                <span>Limpeza Automotiva</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a href="#">
+                                <img src="public/img/header/Icon-menu_car-discount.svg" alt=".">
+                                <span>Principais Promoções</span>
+                            </a>
+							<div class="child-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 flex-column flex-wrap d-flex">
+												<ul class="column">
+													<li>
+                                                        <a href="#">
+                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#"><span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                </a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span>  
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <span><i class="ri-arrow-right-s-line"></i> Apoio de braço</span> 
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+													</li>
+												</ul>
+              
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/header/thumb_menu.png" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+                
+				<nav class="header__nav-moblie">
+					<div class="header__nav-moblie-top">
+						<div class="d-flex header__nav-moblie-top-user">
+							<div class="item-user">
+								<a href="#">
+									<span><i class="fas fa-user"></i></span>
+								</a>
+							</div>
+							<div class="item-welcome">
+								<span>Bem-Vindo!</span>
+								<a href="#">Entre ou Cadastre-se</a>
+							</div>
+						</div>
+						<div class="d-flex header__nav-moblie-top-links">
+							<div class="item-account">
+								<a href="#">
+									<span>Minha Conta</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+							<div class="item-account">
+								<a href="#">
+									<span>Meus Pedidos</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
+						<button class="header__nav-moblie-top-close">
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="header__nav-moblie-menu">
+						<ul class="menu">
+							<li>
+								<a href="#">
+									<span>Masculino</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<div class="see-all">
+											<span class="back">
+												<i class="fas fa-angle-left"></i></i>Voltar
+											</span>
+											<span class="all">
+												<a href="#">Ver Todos</a>
+											</span>
+										</div>
+									</li>
+		
+									<li>
+										<a href="">
+											<span>Calças</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<ul class="col-menu">
+											<li>
+												<div class="see-all">
+													<span class="back">
+														<i class="fas fa-angle-left"></i>Voltar
+													</span>
+													<span class="all">
+														<a href="#">Ver Todos</a>
+													</span>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span>Calça de Sarja</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Calça de Sarja</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Calça de Sarja</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Feminino</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Cowboys Kids</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Decoração</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Selaria</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Look Família</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+        
+		<main class="home">
+			<section class="home__slide">
+				<div class="item">
+					<div class="d-none d-md-block">
+						<img src="./public/img/home/slide-1.png" alt="Slide 1" />
+					</div>
+					<div class="d-block d-md-none">
+						<img src="./public/img/home/slide-home-mob.png" alt="Slide 1" />
+					</div>
+                    <div class="item__content">
+                        <span class="item__content-offer">Super Desconto</span>
+                        <h2 class="item__content-title">Peças para Carros clássicos</h2>
+                        <span class="item__content-pre">com até</span>
+                        <span class="item__content-descount">30%OFF</span>
+
+                        <a href="" class="item__content-action">Confira aqui</a>
+                    </div>
+				</div>
+				<div class="item">
+					<div class="d-none d-md-block">
+						<img src="./public/img/home/slide-1.png" alt="Slide 1" />
+					</div>
+					<div class="d-block d-md-none">
+						<img src="./public/img/home/slide-home-mob.png" alt="Slide 1" />
+					</div>
+				</div>
+			</section>
+
+			<div class="container">
+				<section class="home__infos">
+					<div class="home__infos-box">
+                        <span><i class="ri-truck-fill"></i></span>
+                        <h4>Enviamos para todo o Brasil</h4>
+					</div>
+                    <div class="home__infos-box">
+                        <span><i class="ri-award-fill"></i></span>
+                        <h4>Qualidade Garantida</h4>
+					</div>
+                    <div class="home__infos-box">
+                        <span><i class="ri-secure-payment-fill"></i></span>
+                        <h4>Compra 100% Segura</h4>
+					</div>
+                    <div class="home__infos-box">
+                        <span><i class="ri-bank-card-fill"></i></span>
+                        <h4>Parcele no cartão de crédito</h4>
+					</div>
+				</section>
+
+                <section class="home__search">
+
+                    <div class="home__search-guia">
+                        <ul>
+							<li data-index="1" class="active">Busque por placa</li>
+							<li data-index="2">Busque por modelo do seu carro</li>
+						</ul>
+                    </div>
+                    <div class="home__search-content">
+                        <div class="item item-1 active">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Procure pela placa do carro">
+                                <button type="submit">Ver Produtos <i class="fas fa-angle-right"></i></button>
+                            </form>
+                        </div>
+                        <div class="item item-2">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Procure pelo modelo do carro">
+                                <button type="submit">Ver Produtos <i class="fas fa-angle-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="home__banners">
+                    <div class="item">
+                        <div class="item__content">
+                            <span class="item__content-tags">Oferta</span>
+                            <h3>Peças para Carros clássicos</h3>
+                            <span class="item__content-suboffer">com até</span>
+                            <span class="item__content-offer">30%OFF</span>
+
+                            <a href="#" class="item__content-buy">Comprar <i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        <div class="item__thumb">
+                            <img src="./public/img/home/car.png" alt="X">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__content">
+                            <span class="item__content-tags">Oferta</span>
+                            <h3>Peças para Carros clássicos</h3>
+                            <span class="item__content-suboffer">com até</span>
+                            <span class="item__content-offer">30%OFF</span>
+
+                            <a href="#" class="item__content-buy">Comprar <i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        <div class="item__thumb">
+                            <img src="./public/img/home/car.png" alt="X">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="home__cars">
+                    <h3 class="home__cars-title">Encontre por Modelo</h3>
+                    <div class="home__cars-slick">
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__thumb">
+                                    <img src="./public/img/home/car-model.png" alt="...">
+                                </div>
+                                <div class="item__title">
+                                    <h5>Fiesta</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+			</div>
+
+			<div class="container">
+				<section class="home__showcases showcases">
+					<div class="home__showcases-slide">
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+									<span class="item-infos-tag">OFERTA</span>
+									<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-proprice">Por apenas</span>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines">
+											Até 3x de 24,13 no cartão de crédico <br>
+											ou R$ 68,78 via Boleto Bancário
+										</span>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/vitrine-1.png" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<span class="item-infos-tag">OFERTA</span>
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<span class="item-infos-tag">OFERTA</span>
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<a href="#">
+									<div class="item-thumb">
+										<span class="item-thumb-discount">
+											<i class="fas fa-caret-down"></i>
+											11%
+										</span>
+										<img src="./public/img/home/loading.gif" alt="Product" />
+									</div>
+									<div class="item-infos">
+										<span class="item-infos-tag">OFERTA</span>
+										<h3>Capacete giro Scramp S de ciclismo infantil</h3>
+										<span class="item-infos-price">R$ 299,00</span>
+										<span class="item-infos-deadlines"
+											>Em 9x de <b>R$33,32</b> sem juros ou <b>R$284,91</b> no
+											boleto</span
+										>
+									</div>
+								</a>
+								<div class="item-buy">
+									<a href="#">COMPRAR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home__banners mb-4">
+                    <div class="item">
+                        <div class="item__content">
+                            <span class="item__content-tags">Oferta</span>
+                            <h3>Peças para Carros clássicos</h3>
+                            <span class="item__content-suboffer">com até</span>
+                            <span class="item__content-offer">30%OFF</span>
+
+                            <a href="#" class="item__content-buy">Comprar <i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        <div class="item__thumb">
+                            <img src="./public/img/home/car.png" alt="X">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item__content">
+                            <span class="item__content-tags">Oferta</span>
+                            <h3>Peças para Carros clássicos</h3>
+                            <span class="item__content-suboffer">com até</span>
+                            <span class="item__content-offer">30%OFF</span>
+
+                            <a href="#" class="item__content-buy">Comprar <i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        <div class="item__thumb">
+                            <img src="./public/img/home/car.png" alt="X">
+                        </div>
+                    </div>
+                </section>
+			</div>
+
+				
+	
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+                <div class="row footer__links">
+                    <div class="col-12 col-md-4">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <ul>
+                            <li class="title"><a href="#">INSTITUCIONAL</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                            <li class="subtitle"><a href="#">Sobre a RVTech</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="footer__copy">
+                    <img src="./public/img/footer/logo-footer.png" alt=".">
+                    <span>
+                        RV TECH Distribuidora CNPJ 05.328.923/0001-90 Rodovia Arthur Boigues Filho, 59 CEP: 19026-650 Presidente Prudente - SP Copyright 2022 www.rvtech.com.br - TODOS OS DIREITOS RESERVADOS. É vetada a reprodução total ou parcial das informações aqui veiculadas sem a expressa autorização da administração do site. Os preços e condições de pagamento são válidos exclusivamente para compras realizadas via internet.
+                    </span>
+                </div>
+
+                <div class="footer__seals">
+                    <div class="footer__seals-payments">
+                        <img src="./public/img/footer/payments.png" alt=".." />
+                    </div>
+                    <div class="footer__seals-ebit">
+                        <img src="./public/img/footer/eBit.png" alt=".." />
+                    </div>
+                </div>
+			</div>
+            <div class="footer__tray">Tecnologia <em>Tray</em> </div>
+		</footer>
+
+        
+
+		<div class="blurry"></div>
+        
+		<script src="public/js/vendor/jquery-2.2.1.min.js"></script>
+		<script src="public/js/vendor/bootstrap-4.4.1/bootstrap.min.js"></script>
+		<script src="public/js/vendor/slick/slick.min.js"></script>
+		<script src="public/js/home.min.js"></script>
+	</body>
+</html>

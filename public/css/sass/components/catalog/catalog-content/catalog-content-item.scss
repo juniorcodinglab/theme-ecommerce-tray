@@ -1,0 +1,35 @@
+.item {
+    h1 {
+        color: $red;
+        font-family: Exo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    &-order {
+        form {
+            label {
+                display: block;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+                color: #171F35;
+                margin-right: 10px;
+            }
+
+            select {
+                width: 190px;
+                display: block;
+                font-size: 14px;
+                color: #6C7481;
+                border: 1px solid #c4c4c4;
+                border-radius: 6px;
+                font-size: 16px;
+                padding: 5px;
+            }
+        }
+    }
+}

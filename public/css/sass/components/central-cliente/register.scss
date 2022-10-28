@@ -1,0 +1,121 @@
+.register {
+    .Seguro {
+        display: none;
+    }
+    h1 {
+        display: block;
+        background-color: $red-dark;
+        padding: 50px;
+        width: 100%;
+        font-family: 'Exo';
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+    }
+    input[type="text"], input[type="tel"],  input[type="email"], input[type="password"] {
+        display: block;
+        font-size: 14px;
+        padding: 4px;
+        width: 70%;
+        font-weight: 400;
+        font-family: 'Inter';
+        margin: 5px 0 0 0;
+        line-height: 1.8rem;
+        vertical-align: middle;
+        border: 1px solid #ccc;
+        color: #000;
+    }
+
+    label {
+        color: $red-dark;
+        font-family: 'Exo';
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #CadastroAbas {
+        margin: 20px 0;
+        ul {
+            display: flex;
+            #PessoaFisica {
+                padding: 10px;
+                border: 2px solid $red-dark;
+                width: auto;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            #PessoaJuridica {
+                padding: 10px;
+                border: 2px solid $red-dark;
+                width: auto;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .aberta {
+                background-color: $red-dark;
+                font-weight: bold;
+                a {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+
+    .txt-dados-pessoais {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    fieldset {
+        .obriga.red {
+            color: $red-dark;
+        }
+        #juridica {
+            margin-top: 20px;
+        }
+        #fisica {
+            margin-top: 20px;
+        }
+        label {
+            width: 100%;
+            margin: 10px 0;
+        }
+        strong {
+            margin-bottom: 10px;
+        display: block;
+        }
+    }
+    .botao-prosseguir-cadastro{
+        border: 2px solid #6C7481;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: #FFF;
+        line-height: 22px;
+        color: #000;
+        text-align: center;
+        letter-spacing: -0.1px;
+        span {
+            background: none;
+        }
+    }
+    #span_cep_nacional {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        #cep_1 {
+            width: 55%;
+            margin-right: 10px;
+        }
+        #cep_2 {
+            width: 40%;
+            margin-left: 10px;
+        }
+    }
+
+}

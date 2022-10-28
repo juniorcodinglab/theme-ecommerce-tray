@@ -1,0 +1,17 @@
+&-certificate {
+    a {
+        i {
+            display: block;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        a {
+            i {
+                display: block;
+                margin: 3px;
+            }
+        }
+
+    }
+}

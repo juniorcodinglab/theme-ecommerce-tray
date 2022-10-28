@@ -1,0 +1,80 @@
+&-thumb {
+    padding: 0 25px;
+    display: block;
+    margin-bottom: 10px;
+
+    a {
+        display: block;
+    }
+
+    .slick-arrow {
+        font-size: 22px;
+        color: $gray-dark;
+        background: white;
+        border: none;
+        padding: 0;
+        display: block !important;
+        width: 100%;
+        position: relative;
+
+        &.slick-next {
+            margin-top: -15px;
+        }
+
+        &.slick-disabled {
+            color: $gray-dark;
+        }
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+
+    &-main {
+        img {
+            height: 450px;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+
+    &-dots {
+        padding: 15px 0;
+
+        >.d-flex {
+            flex-wrap: wrap;
+
+            .item {
+                min-width: 60px;
+                margin: 5px 4px;
+                 border: 2px solid rgb(204, 204, 204);
+                    border-radius: 7px;
+                overflow: hidden;
+                &.active {
+                    border: 2px solid #000 ;
+                }
+
+                a {
+                    cursor: pointer;
+                    border-radius: 7px;
+                    overflow: hidden;
+                    display: block;
+                    border: 1px solid $gray-dark;
+
+                    &.selected {
+                        border: 1px solid $red-dark;
+                    }
+                }
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-position: center;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

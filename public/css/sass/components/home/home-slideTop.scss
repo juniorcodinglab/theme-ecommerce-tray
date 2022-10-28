@@ -1,0 +1,52 @@
+&__slide {
+    .item {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            min-height: 480px;
+            object-fit: cover;
+        }
+        &__content {
+            top: 0;
+            padding: 0 80px;
+            position: absolute;
+            width: 600px;
+            transform: translateY(-50%);
+            top: 50%;
+
+            &-offer {
+                @include font($white, 500, 13px, 100%);
+                padding: 2px 4px;
+                border: 2px solid $orange;
+                border-radius: 7px;
+                text-transform: uppercase;
+            }
+            &-title {
+                margin-top: 5px;
+                margin-bottom: 40px;
+                @include font($white, 500, 60px, 80%);
+            }
+            &-pre {
+                @include font($white, 400, 30px, 100%);
+            }
+            &-descount {
+                @include font($white, bold, 80px, 70%);
+                display: block;
+            }
+            &-action {
+                @include font($white, 400, 26px, 100%);
+                margin-top: 35px;
+                text-align: center;
+                background-color: $orange;
+                padding: 12px 20px;
+                border-bottom: 4px solid $white;
+                border-radius: 4px;
+                display: block;
+                width: 250px;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}

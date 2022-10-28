@@ -1,0 +1,19 @@
+&-filter {
+
+    @import "catalog-filter-applied";
+    @import "catalog-filter-carrousel";
+    @import "catalog-filter-close";
+
+    @media(max-width: 800px) {
+        overflow: scroll;
+        padding: 20px;
+        position: fixed;
+        height: 100vh;
+        background-color: #FFF;
+        top: 0;
+        left: -100%;
+        z-index: 11;
+        width: 90%;
+        transition: all .5s ease;
+    }
+}

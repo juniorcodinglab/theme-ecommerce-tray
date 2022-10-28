@@ -1,0 +1,51 @@
+.item {
+    width: 25%;
+    display: flex !important;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    
+    &:hover {
+        .item-box{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            max-width: 100%;
+            z-index: 1;
+        }
+        .item-buy {
+            height: auto;
+            overflow: visible;
+        }
+        
+    }
+    &-box {
+        padding: 10px;
+        max-width: 248px;
+        border-radius: 8px;
+        a {
+            display: block;
+            text-decoration: none;
+        }
+    }
+
+    @import "catalog-item-thumb";
+    @import "catalog-item-deadline";
+
+    &-buy {
+        height: 0;
+        overflow: hidden;
+        @import "../../../buttons/buttom-buy";
+    }
+    
+    @media (max-width: 800px) {
+        padding: 5px;
+        &:hover {
+            .item-box {
+                box-shadow: none;
+            }
+        }
+        &-box {
+            padding: 0;
+        }
+    }
+}

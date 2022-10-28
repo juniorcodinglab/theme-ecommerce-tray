@@ -1,0 +1,27 @@
+&-fillet_banners {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+    .item {
+        width: 32%;
+        border-radius: 6px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+
+    @media (max-width: 800px) {
+
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: 10px;
+        .item {
+            min-width: 80%;
+            padding-right: 10px;
+        }
+    }
+}

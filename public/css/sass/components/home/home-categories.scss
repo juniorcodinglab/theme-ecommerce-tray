@@ -1,0 +1,44 @@
+&-categories {
+
+    .slick-arrow {
+        top: calc(30% - 11px) !important;
+    }
+
+    &-slide {
+        display:flex;
+        min-height: 250px;
+        
+        .item {
+            width: 100%;
+            padding: 10px;
+            display: flex !important;
+            justify-content: center;
+            a {
+                max-width: 140px;
+                display: block;
+                img {
+                    width: 100%
+                }
+                span {
+                    margin-top: 10px;
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: #000;
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        &-slide {
+            overflow: hidden;
+            margin-right: -15px;
+            .slick-list {
+                min-width: 135%;
+            }
+        }
+    }
+}

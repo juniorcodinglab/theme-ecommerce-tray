@@ -1,0 +1,50 @@
+&-infos {
+    margin-top: 20px;
+    @include for-phone-only {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    &-tag {
+        display: inline-block;
+        background-color: $orange;
+        padding: 7px;
+        border-radius: 7px;
+        @include font($white, bold, 12px, 100%);
+    }
+    h3 {
+        margin: 4px 0;
+        min-height: 50px;
+        text-align: left;
+        display: block;
+        @include font($gray-dark, 500, 16px, 100%);
+       
+        @include for-phone-only {
+            font-size: 14px;
+        }
+    }
+    &-price {
+        display: block;
+        width: 100%;
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        color: #000;
+        @include for-phone-only {
+            text-align: left;
+        }
+    }
+    &-deadlines {
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        color: #000;
+        min-height: 60px;
+        text-align: center;
+        b {
+            font-size: 17px;
+            color: #969696;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+&-paginate {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    @import "catalog-paginate-links";
+    @import "catalog-paginate-result";
+}

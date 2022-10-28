@@ -1,0 +1,14 @@
+&-payments {
+    i {
+        display: block;
+        margin: 5px;
+    }
+
+    @media (max-width: 767px) {
+        i {
+            display: block;
+            margin: 3px;
+        }
+
+    }
+}

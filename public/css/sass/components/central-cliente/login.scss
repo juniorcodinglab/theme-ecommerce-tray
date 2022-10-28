@@ -1,0 +1,109 @@
+.login {
+    .carrinho-tabs {
+        display: none;
+    }
+    .container-titulo-login {
+        display: none;
+    }
+    .board {
+        margin: 30px 0;
+        display: flex;
+        .caixa-login {
+            border-right: 1px solid $gray-dark;
+
+            label::before {
+                content: "Digite seu email ou CPF/CNPJ para se autenticar.";
+                color: #747474;
+                font-size: 14px;
+                display: block;
+            }
+        }
+        .caixa-cadastro {
+            p.campo-email {
+                label::before {
+                    content: "Digite seu ";
+                }
+            }
+        }
+        div {
+            width: 50%;
+            padding: 20px;
+        }
+        h3 {
+            font-family: 'Exo';
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        fieldset > label {
+            color: #747474;
+            font-size: 0;
+        }
+        .cadastro-desc {
+            color: #747474;
+            font-size: 14px;
+        }
+        button.botao-efetuar-login, button.botao-novo-cadastro {
+            border: 2px solid #6C7481;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            background-color: #FFF;
+            line-height: 22px;
+            color: #000;
+            text-align: center;
+            letter-spacing: -0.1px;
+        }
+
+        
+
+        #email_cadastro {
+            width: 100% !important;
+        }
+        label {
+            font-size: 0;
+            margin-top: 10px;
+            color: #747474;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: initial;
+        }
+        input[type="email"] {
+            display: block;
+            width: 100%;
+            font-size: 13px;
+            color: #747474;
+            border: 1px solid #DFE1E5;
+            padding: 10px 15px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            background: white;
+            margin-bottom: 10px;
+        }
+       
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .login {
+        .board {
+            flex-direction: column;
+            > div {
+                width: 100%;
+                padding: 20px;
+            }
+            .caixa-login {
+                border-right: none;
+            }
+        }
+    }
+
+}

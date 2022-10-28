@@ -1,0 +1,12 @@
+.footer {
+	margin: 0;
+	background-color: $orange;
+	padding-top: 20px;
+    a {
+        text-decoration: none;
+    }
+    @import "footer-links";
+    @import "footer-copy";
+    @import "footer-seals";
+    @import "footer-tray";
+}

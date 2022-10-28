@@ -1,0 +1,17 @@
+&-buy {
+    height: 0;
+    overflow: hidden;
+    a {
+        width: 100%;
+        //display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(24, 23, 23);
+        //padding: 10px;
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 20px;
+
+    }
+}

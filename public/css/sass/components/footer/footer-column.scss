@@ -1,0 +1,22 @@
+&-column {
+    li {
+        text-decoration: none;
+        color: white;
+    }
+    &.seguranca {
+        margin-top: 30px;
+        color: white;
+    }
+    
+    @import "column/footer-column-button";
+    @import "column/footer-column-certificate";
+    @import "column/footer-column-link";
+    @import "column/footer-column-payments";
+    @import "column/footer-column-title";
+    @import "column/footer-column-visit";
+
+    @media (max-width: 767px) {
+
+        margin-top: 35px;
+    }
+}

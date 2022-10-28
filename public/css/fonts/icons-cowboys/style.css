@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2mbo75');
+  src:  url('fonts/icomoon.eot?2mbo75#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2mbo75') format('truetype'),
+    url('fonts/icomoon.woff?2mbo75') format('woff'),
+    url('fonts/icomoon.svg?2mbo75#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down-fill:before {
+  content: "\e915";
+}
+.icon-dropdown:before {
+  content: "\e912";
+}
+.icon-atendimento:before {
+  content: "\e900";
+}
+.icon-cart-light:before {
+  content: "\e901";
+}
+.icon-trash:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-add:before {
+  content: "\e906";
+}
+.icon-remove:before {
+  content: "\e907";
+}
+.icon-menu:before {
+  content: "\e909";
+}
+.icon-close:before {
+  content: "\e90a";
+}
+.icon-arrow-down:before {
+  content: "\e90b";
+}
+.icon-arrow-up:before {
+  content: "\e90c";
+}
+.icon-arrow-right:before {
+  content: "\e90e";
+}
+.icon-arrow-left:before {
+  content: "\e90d";
+}
+.icon-hora:before {
+  content: "\e902";
+}
+.icon-mail-footer:before {
+  content: "\e903";
+}
+.icon-star:before {
+  content: "\e908";
+}
+.icon-compartilhar:before {
+  content: "\e90f";
+}
+.icon-home:before {
+  content: "\e910";
+}
+.icon-cart-fill:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e913";
+}
+.icon-facebook:before {
+  content: "\e914";
+}
+.icon-whatsapp:before {
+  content: "\e916";
+}
+.icon-pinterest:before {
+  content: "\e91a";
+}
+.icon-send-email:before {
+  content: "\e91b";
+}
+.icon-telefone:before {
+  content: "\e91c";
+}
+.icon-coracao:before {
+  content: "\e91d";
+}
+.icon-headset:before {
+  content: "\e917";
+}
+.icon-chat:before {
+  content: "\e918";
+}
+.icon-email:before {
+  content: "\e919";
+}
+.icon-frete:before {
+  content: "\e94d";
+}
+.icon-original:before {
+  content: "\e955";
+}
+.icon-pagamento:before {
+  content: "\e956";
+}
+.icon-porcentagem:before {
+  content: "\e957";
+}
+.icon-troca:before {
+  content: "\e958";
+}
+.icon-ruler:before {
+  content: "\e951";
+}
+.icon-cart-add:before {
+  content: "\e950";
+}

@@ -1,0 +1,15 @@
+.catalog {
+    padding: 0;
+
+    @import "catalog-content/catalog-content";
+    @import "catalog-filter/catalog-filter";
+    @import "catalog-paginate/catalog-paginate";
+    @import "catalog-products/catalog-products";
+    @import "catalog-left_showcases/catalog-left_showcases";
+
+    
+    
+    @media (max-width: 767px) {
+        padding: 10px 0;
+    }
+}

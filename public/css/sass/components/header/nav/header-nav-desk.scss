@@ -1,0 +1,158 @@
+&-desk {
+    width: 100%;
+    border-bottom: 1px solid $gray-darker;
+    border-top: 1px solid $gray-darker;
+    > ul {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: $gray-darker;
+        gap: 10px;
+        // Menu com os Icones
+        > li {
+            > a {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                background-color: $gray-dark;
+                padding: 10px;
+                border-radius: 7px;
+                img {
+                    display: block;
+                    width: 40px;
+                }
+                span {
+                    padding-top: 10px;
+                    display: block;
+                    width: 90px;
+                    margin: 0 auto;
+                    text-align: center;
+                    min-height: 36px;
+                    @include font($white, 600, 13px, 100%);
+                }
+                
+            }
+            
+            .child-container {
+                margin-top: 10px;
+                width: 100%;
+                background-color: $gray-darker;
+                position: absolute;
+                display: none;
+                z-index: 100;
+                padding: 20px 0;
+                overflow: hidden;
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+                right: 0;
+                transition: visibility 0s .2s, opacity .5s linear;
+                min-width: 700px;
+                .d-flex {
+                    max-height: 380px;
+                    ul.column {
+                        padding: 0;
+                        margin: 0;
+                        flex-grow: 1;
+                        max-height: 30px;
+                        /* ALL LI */
+                        li {
+                            list-style: none;
+                            a {
+                                @include font($white, 400, 20px, 100%);
+                                text-decoration: none;
+                            }
+ 
+                            // ul, ul *{
+                            //     height: 0;
+                            //     overflow: hidden;
+                            //     display: block;
+                            // }
+                        }
+                        /* 1º Nível */
+                        > li {
+                            a {
+                                i {
+                                    color: $orange;
+                                }
+                            }
+                            ul {
+                                margin-left: 20px;
+                            }
+                        }
+    
+                        
+                    }
+                }
+                
+            }
+
+            &:hover {
+                > a {
+                    background-color: $orange;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        background-color: $gray-dark;
+                        width: 20px;
+                        height: 20px;
+                        bottom: -25px;
+                        transform: rotate(45deg);
+                    }
+                }
+                .child-container  {
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    transition: opacity .5s linear;
+                    height: auto;
+                    border-top: 15px solid $gray-dark;
+                }
+            }
+        }
+    }
+
+    &.active {
+        position: fixed;
+        top: 66px;
+        width: 100%;
+        z-index: 100;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: .5s ease all;
+        background-color: #FFF;
+
+        .header__main-desktop-search {
+            input {
+                height: 50px;
+                padding: 10px 20px;
+            }
+            button {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        > ul {
+            padding: 5px 0;
+            > li {
+                > a {
+                    img {
+                        display: none;
+                    }
+                    span {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        display: none;
+    }
+}

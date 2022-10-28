@@ -1,0 +1,12 @@
+&__seals {
+    display: flex;
+    justify-content: space-between;
+    @include for-phone-only {
+        flex-wrap: wrap;
+    }
+    &-payments {
+        img {
+            max-width: 100%;
+        }
+    }
+}

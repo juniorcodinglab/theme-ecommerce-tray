@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/js/vendor/slick/slick.css" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="public/css/product.min.css" />
+		<title>Página Produto - RV Tech</title>
+	</head>
+	<body>
+
+		<header class="header">
+			<div class="header-top">
+				<div class="item">
+					<strong>12% Off</strong> na loja toda! Exceto em lançamentos! Cupom:
+					<strong>LANCA12</strong>
+				</div>
+				<div class="item">
+					<strong>12% Off</strong> na loja toda! Exceto em lançamentos! Cupom:
+					<strong>CUPOM12</strong>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="header-main-desktop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 col-md-3">
+								<div class="d-none d-md-block">
+									<img
+										src="./public/img/logo.png"
+										alt=""
+										class="header-main-desktop-logo"
+									/>
+								</div>
+								<div class="d-block d-md-none">
+									<img
+										src="./public/img/logo-mob.png"
+										alt=""
+										class="header-main-desktop-logo"
+									/>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="header-main-desktop-search">
+									<input type="text" />
+									<button><i class="fas fa-search"></i></button>
+								</div>
+							</div>
+							<div class="col-12 col-md-3">
+								<div class="d-flex">
+									<div class="header-main-desktop-login">
+										<a href="#">
+											<i class="fas fa-user"></i>
+											<span
+												>Entre ou <br />
+												Cadastre-se</span
+											>
+										</a>
+									</div>
+
+									<div class="d-flex header-main-desktop-cart cart">
+										<div class="cart-bt">
+											<span>0</span>
+											<i class="fas fa-shopping-cart fa-3x"></i>
+										</div>
+
+										<div class="d-none cart-total">
+											<div class="cart-total-item">
+												<img
+													src="./public/img/cart-header-product.webp"
+													alt="NOME_DO_PRODUTO"
+												/>
+												<div>
+													<h5 class="cart-total-item-product">
+														Camisa Lotto Cesare Azul
+													</h5>
+													<span class="cart-total-item-variant"
+														><b>Tamanho:</b> P</span
+													>
+													<span class="cart-total-item-qntd"
+														><b>Quantidade:</b> 1</span
+													>
+												</div>
+												<div>
+													<i class="fas fa-trash-alt"></i>
+													<span class="cart-total-item-price">R$ 32,90</span>
+												</div>
+											</div>
+
+											<div class="cart-total-subtotal">
+												<span>Subtotal: <b>R$ 132,80</b></span>
+											</div>
+
+											<div class="cart-total-finish">
+												<a
+													href="https://www.futfanatics.com.br/loja/carrinho.php?loja=311840"
+													>Finalizar compra</a
+												>
+											</div>
+										</div>
+
+										<span class="d-none cart-update"> ... </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header-main-moblie">
+					<div class="d-flex">
+						<div class="header-main-moblie-bar">
+							<button><i class="fas fa-bars"></i></button>
+						</div>
+						<div class="header-main-moblie-logo">
+							<img src="./public/img/logo-mob.png" alt="Logo" />
+						</div>
+						<div class="header-main-moblie-search">
+							<button><i class="fas fa-search"></i></button>
+						</div>
+						<div class="header-main-moblie-cart">
+							<button><i class="fas fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<div class="header-main-moblie-input d-none">
+						<div class="position-relative">
+							<button class="header-main-moblie-input-search">
+								<i class="fas fa-search"></i>
+							</button>
+							<input type="text" />
+							<button class="header-main-moblie-input-close">
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav">
+				<nav class="header-nav-desk">
+					<ul>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"
+								><span>Categoria</span><i class="fas fa-angle-down"></i
+							></a>
+							<div class="child-container">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 d-flex">
+											<div class="flex-grow-1 d-flex">
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Acessórios</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Bandanas e Máscaras</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Bonés</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Canivetes e Chaveiros</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Carteiras</a></li>
+															<li>
+																<a href="{{ store.url }}"
+																	>Chapéus e Acessórios</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}">Cintos e Fivelas</a>
+															</li>
+															<li><a href="{{ store.url }}">Tereré</a></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="column">
+													<li>
+														<a class="menu-title" href="">Vestuário</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}"
+																	>Blusinhas e Vestidos</a
+																>
+															</li>
+															<li><a href="{{ store.url }}">Calças</a></li>
+															<li><a href="{{ store.url }}">Camisas</a></li>
+															<li><a href="{{ store.url }}">Inverso</a></li>
+															<li>
+																<a href="{{ store.url }}">Mãe e Filhas</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a class="menu-title" href="">Calçados</a>
+														<ul>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-coca-cola"
+																	>Botas e Galochas</a
+																>
+															</li>
+															<li>
+																<a href="{{ store.url }}/compre-ganhe-umbro"
+																	>Tênis e Botinhas</a
+																>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="flex-shrink-0 d-none d-lg-block">
+												<div class="menu-img">
+													<a
+														href="{{ settings.menu_loja_link }}"
+														target="{{ settings.menu_loja_link_target }}"
+													>
+														<img src="./public/img/thumb.webp" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+
+				<nav class="header-nav-moblie">
+					<div class="header-nav-moblie-top">
+						<div class="d-flex header-nav-moblie-top-user">
+							<div class="item-user">
+								<a href="#">
+									<span><i class="fas fa-user"></i></span>
+								</a>
+							</div>
+							<div class="item-welcome">
+								<span>Bem-Vindo!</span>
+								<a href="#">Entre ou Cadastre-se</a>
+							</div>
+						</div>
+						<div class="d-flex header-nav-moblie-top-links">
+							<div class="item-account">
+								<a href="#">
+									<span>Minha Conta</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+							<div class="item-account">
+								<a href="#">
+									<span>Meus Pedidos</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
+						<button class="header-nav-moblie-top-close">
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="header-nav-moblie-menu">
+						<ul class="menu">
+							<li>
+								<a href="#">
+									<span>Masculino</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Feminino</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Cowboys Kids</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span>Decoração</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Selaria</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Look Família</span>
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="product">
+			<div class="container">
+				<div class="breadcrumb">
+					<div class="col-12 d-flex align-items-center">
+						<span class="breadcrumb-home">
+							<i class="fas fa-home"></i>
+						</span>
+						<span class="breadcrumb-next">
+							<i class="fas fa-angle-right"></i>
+						</span>
+						<span class="breadcrumb-subtitle">
+							<a href="#" title="XXXXX">XXXX</a>
+						</span>
+						<span class="breadcrumb-next">
+							<i class="fas fa-angle-right"></i>
+						</span>
+						<span class="breadcrumb-title"> Roupas </span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-7">
+						<div class="product-thumb">
+							<div class="product-thumb-main">
+								<img src="./public/img/product/tumb.jpg" alt="Cowboys" />
+							</div>
+							<div class="product-thumb-dots">
+								<div class="d-flex justify-content-center">
+									<div class="item">
+										<img
+											src="./public/img/product/tumb-1.webp"
+											data-src-full="./public/img/product/tumb-1.webp"
+											alt=""
+										/>
+									</div>
+									<div class="item">
+										<img
+											src="./public/img/product/tumb-2.webp"
+											data-src-full="./public/img/product/tumb-2.webp"
+											alt=""
+										/>
+									</div>
+									<div class="item">
+										<img
+											src="./public/img/product/tumb.jpg"
+											data-src-full="./public/img/product/tumb.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="product-detail">
+							<form
+								id="form_comprar"
+								method="post"
+								data-app="product.buy-form"
+								action="A"
+								class="form_buy"
+							>
+								<div class="form_buy-ref">REF: BOTON-PENA</div>
+
+								<h1 class="form_buy-name" itemprop="name">
+									Conjunto Balcão Para Cooktop 5 Bocas 2 Portas Com Armário
+									Aéreo Horizontal 1 Porta Itatiaia Tarsila
+								</h1>
+
+								<div class="form_buy-available">
+									<i class="fas fa-star active"></i>
+									<i class="fas fa-star active"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<span>Faça uma avaliação!</span>
+								</div>
+
+								<div class="form_buy-price">
+									<div
+										data-url-pricebox="/mvc/store/product/variant_price/?loja=646215"
+										id="product-priceBox"
+									>
+										<div
+											data-app="product.price-box"
+											class="produto-preco bg-tone-5 border-tone-5"
+										>
+											<div id="preco" align="left">
+												<br />
+												<div id="produto_preco">
+													<span class="color-tone-2 txt-por">Por:</span
+													><br /><span class="PrecoPrincipal color-tone-2"
+														><abbr class="currency" title="BRL"> R$ </abbr
+														><span
+															data-app="product.price"
+															id="variacaoPreco"
+															data-tray-tst="price_product"
+															>199,90</span
+														><input
+															type="hidden"
+															value="199.90"
+															id="preco_atual" /></span
+													><br /><span id="precoDe"></span>
+													<h5 id="economize" class="produto-economize"></h5>
+													<span id="info_preco"
+														><br /><span class="txt-corparcelas"
+															><span class="txt-corparcelas"
+																><span class="preco-parc2">
+																	ou
+																	<strong class="color">
+																		6<span>x</span></strong
+																	></span
+																></span
+															></span
+														><span class="preco-de"> de </span
+														><span class="txt-cadaparcelas"
+															><strong class="preco-parc2"
+																>R$
+																<span
+																	><span
+																		>33<span>,<span>32</span></span></span
+																	></span
+																></strong
+															></span
+														><span class="operadora"> Sem juros </span
+														><!-- 6|33.32|{lower_price}|78 --></span
+													>
+													<div id="detalhes_formas"></div>
+												</div>
+												<div id="produto_nao_disp">
+													<input
+														type="hidden"
+														name="verifica_variacao"
+														id="verifica_variacao"
+														value=""
+													/><input
+														type="hidden"
+														name="verifica_clientes_aguardando"
+														id="verifica_clientes_aguardando"
+														value="1"
+													/><input
+														type="hidden"
+														name="verifica_estoque_venda"
+														id="verifica_estoque_venda"
+														value=""
+													/><input
+														type="hidden"
+														name="verifica_variacao_dupla_valor"
+														id="verifica_variacao_dupla_valor"
+														value="0"
+													/><input
+														type="hidden"
+														name="layout_variacao"
+														id="layout_variacao"
+														value="1"
+													/><input
+														type="hidden"
+														name="define_radio_select"
+														id="define_radio_select"
+														value=""
+													/><input
+														type="hidden"
+														name="variant_selected"
+														id="variant_selected"
+														value="0"
+													/>
+												</div>
+											</div>
+											<div
+												id="info"
+												class="produto-formas-pagamento"
+												align="left"
+											>
+												<a
+													href="https://www.cowboys.com.br/masculino/camisa-cowboys-camisamc-cow-xazvb#formaPagto"
+													rel="nofollow"
+													id="showPaymentMethods"
+													class="color"
+													data-cache="cache"
+													>+ Ver todas as formas de pagamentos</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form_buy-variant">
+									<div
+										class="cor_variacao show_size_and_color_type passo1"
+										id="show_size_and_color_main_type"
+									>
+										<div
+											id="menuVars"
+											data-tray-tst="it_has_variation"
+											align="left"
+											data-product-id="10713"
+											data-url="/mvc/store/product/loadNextVariantDropDown/?loja=646215"
+											data-url-gallery="/mvc/store/product/variant_gallery/?loja=646215"
+											data-mandatory="1"
+											data-multi-variant="0"
+										>
+											<div class="texto_variacao">
+												<h2>Escolha Tamanho</h2>
+												<span id="cor_nome"></span>
+											</div>
+											<ul class="lista_cor_variacao">
+												<li
+													style="cursor: pointer"
+													data-id="30419"
+													class="sem_estoque"
+												>
+													<div
+														id="cor_30419"
+														alt="GGG"
+														title="GGG"
+														class=""
+														data-tray-tst="variation_first_color_0"
+													>
+														GGG
+													</div>
+													<span style="display: none">GGG</span>
+												</li>
+												<li
+													style="cursor: pointer"
+													data-id="30421"
+													class="sem_estoque"
+												>
+													<div
+														id="cor_30421"
+														alt="GGGG"
+														title="GGGG"
+														class=""
+														data-tray-tst="variation_first_color_1"
+													>
+														GGGG
+													</div>
+													<span style="display: none">GGGG</span>
+												</li>
+												<li
+													style="cursor: pointer"
+													data-id="30423"
+													class="sem_estoque"
+												>
+													<div
+														id="cor_30423"
+														alt="GGGGG"
+														title="GGGGG"
+														class=""
+														data-tray-tst="variation_first_color_2"
+													>
+														GGGGG
+													</div>
+													<span style="display: none">GGGGG</span>
+												</li>
+												<li style="cursor: pointer" data-id="19209" class="">
+													<div
+														id="cor_19209"
+														alt="P"
+														title="P"
+														class=""
+														data-tray-tst="variation_first_color_3"
+													>
+														P
+													</div>
+													<span style="display: none">P</span>
+												</li>
+												<li style="cursor: pointer" data-id="19211" class="">
+													<div
+														id="cor_19211"
+														alt="M"
+														title="M"
+														class=""
+														data-tray-tst="variation_first_color_4"
+													>
+														M
+													</div>
+													<span style="display: none">M</span>
+												</li>
+												<li style="cursor: pointer" data-id="19213" class="">
+													<div
+														id="cor_19213"
+														alt="G"
+														title="G"
+														class=""
+														data-tray-tst="variation_first_color_5"
+													>
+														G
+													</div>
+													<span style="display: none">G</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="form_buy-button">
+									<div class="tray-buy-button">
+										<span
+											id="span_erro_carrinho"
+											class="blocoAlerta"
+											style="display: none"
+											>Selecione uma opção para variação do produto</span
+										>
+										<span
+											id="product-form-box"
+											data-url-form="/mvc/store/product/variant_form/?loja=1072894"
+											class="passo2"
+											><span
+												id="span_erro_carrinho"
+												class="blocoAlerta"
+												style="display: none"
+												>Selecione uma opção para variação do produto</span
+											>
+											<span
+												id="product-form-box"
+												data-url-form="/mvc/store/product/variant_form/?loja=1072894"
+												class="passo3"
+											>
+												<div data-app="product.quantity" id="quantidade">
+													<label class="color">
+														Quantidade:
+														<input
+															id="quant"
+															name="quant"
+															class="text"
+															size="1"
+															type="text"
+															value="1"
+															maxlength="5"
+															onkeyup="mascara(this,numeros,event);"
+														/>
+													</label>
+
+													<span id="estoque_variacao"> / 10</span>
+												</div>
+												<div
+													data-app="product.buy-button"
+													id="bt_comprar"
+													class="remove-bg"
+													align="left"
+												>
+													<button
+														class="botao-commerce botao-comprar"
+														id="button-buy"
+														type="submit"
+														data-tray-tst="button_buy_product"
+													>
+														<span class="botao-commerce-img">Comprar</span>
+													</button>
+													<div
+														id="loading_btn"
+														align="left"
+														style="display: none"
+													>
+														<img
+															src="https://images2.tcdn.com.br/commerce/assets/store/img/loading.gif"
+														/>Calculando ...
+													</div>
+												</div>
+											</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="form_buy-payments"></div>
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-7">
+						<div class="product-description">
+							<h4>Description</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Vestibulum volutpat feugiat ante. Suspendisse at est semper,
+								molestie tellus id, iaculis ipsum. Mauris elit ligula, sodales a
+								nisi nec, blandit dictum augue. Donec pharetra vestibulum turpis
+								pellentesque commodo.
+							</p>
+							<h4>Informações Técnicas</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Vestibulum volutpat feugiat ante. Suspendisse at est semper,
+								molestie tellus id, iaculis ipsum. Mauris elit ligula, sodales a
+								nisi nec, blandit dictum augue. Donec pharetra vestibulum turpis
+								pellentesque commodo.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Vestibulum volutpat feugiat ante. Suspendisse at est semper,
+								molestie tellus id, iaculis ipsum. Mauris elit ligula, sodales a
+								nisi nec, blandit dictum augue. Donec pharetra vestibulum turpis
+								pellentesque commodo.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Vestibulum volutpat feugiat ante. Suspendisse at est semper,
+								molestie tellus id, iaculis ipsum. Mauris elit ligula, sodales a
+								nisi nec, blandit dictum augue. Donec pharetra vestibulum turpis
+								pellentesque commodo.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Vestibulum volutpat feugiat ante. Suspendisse at est semper,
+								molestie tellus id, iaculis ipsum. Mauris elit ligula, sodales a
+								nisi nec, blandit dictum augue. Donec pharetra vestibulum turpis
+								pellentesque commodo.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="product-features">
+							<h3>Características</h3>
+
+							<table>
+								<tbody>
+									<tr>
+										<th scope="row">Marca</th>
+										<td>Nike</td>
+									</tr>
+
+									<tr>
+										<th scope="row">Tipo de Produto</th>
+										<td>Botina</td>
+									</tr>
+									<tr>
+										<th scope="row">Tipo de Produto</th>
+										<td>Botina</td>
+									</tr>
+									<tr>
+										<th scope="row">Tipo de Produto</th>
+										<td>Botina</td>
+									</tr>
+									<tr>
+										<th scope="row">Tipo de Produto</th>
+										<td>Botina</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-12 col-md-7">
+						<div class="product-available">
+							<h2>Avaliações</h2>
+
+							<p>Dê a sua opnião sobre o seu produto.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<ul class="footer-column">
+							<li class="footer-column-title">Conteúdo</li>
+							<li class="footer-column-link">
+								<a href="#">Sobre a AquiTem Barato</a>
+							</li>
+							<li class="footer-column-link"><a href="#">Como Comprar</a></li>
+							<li class="footer-column-link"><a href="#">Frete e Envios</a></li>
+							<li class="footer-column-link"><a href="#">Pagamentos</a></li>
+							<li class="footer-column-link">
+								<a href="#">Política de Trocas</a>
+							</li>
+							<li class="footer-column-link"><a href="#">Privacidade</a></li>
+							<li class="footer-column-link"><a href="#">Fale Conosco</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-3">
+						<ul class="footer-column">
+							<li class="footer-column-title">Atendimento</li>
+							<li class="footer-column-link">
+								<a href="#">
+									<i class="fas fa-clock fa-1x"></i>
+									<span>Segunda a Sexta-feira, das 8h às 18h</span>
+								</a>
+							</li>
+
+							<li class="footer-column-link">
+								<a href="#">
+									<i class="fas fa-phone"></i>
+									<span>(18) 3223-7041</span>
+								</a>
+							</li>
+							<li class="footer-column-link">
+								<a href="#">
+									<i class="fab fa-whatsapp"></i>
+									<span>(18) 99694-2619</span>
+								</a>
+							</li>
+							<li class="footer-column-link">
+								<a href="#">
+									<i class="fas fa-envelope"></i>
+									<span>sac@xxxxx.com.br</span>
+								</a>
+							</li>
+							<li class="footer-column-button d-flex">
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-whatsapp"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-3">
+						<ul class="footer-column">
+							<li class="footer-column-title">Minha Conta</li>
+
+							<li class="footer-column-link">
+								<a href="#">Criar uma conta</a>
+							</li>
+							<li class="footer-column-link"><a href="#">Minha Conta</a></li>
+							<li class="footer-column-link"><a href="#">Meus Pedidos</a></li>
+						</ul>
+
+						<ul class="footer-column seguranca">
+							<li class="footer-column-title"><a href="#">Segurança</a></li>
+
+							<li class="footer-column-certificate">
+								<a href="#">
+									<img src="./public/img/sprite-seguranca.png" alt="." />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-3">
+						<ul class="footer-column">
+							<li class="footer-column-title">Formas de Pagamento</li>
+
+							<img src="./public/img/formas-pagamento.png" alt=".." />
+
+							<!-- <li class="footer-column-visit">
+                            <a href="#">Visite a nossa loja física</a>
+                        </li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="blurry"></div>
+
+		<script src="public/js/vendor/jquery-2.2.1.min.js"></script>
+		<script src="public/js/vendor/bootstrap-4.4.1/bootstrap.min.js"></script>
+		<script src="public/js/vendor/slick/slick.min.js"></script>
+		<script src="public/js/vendor/fontawesome-5.0.10/js/all.js"></script>
+		<script src="public/js/product.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+&__infos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include for-phone-only {
+        overflow-x: scroll;
+    }
+    &-box {
+        padding: 10px 20px;
+        background-color: $gray-lighter;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        border-bottom: 4px solid $orange;
+        
+        span {
+            display: flex;
+            background-color: $orange;
+            color: $white;
+            font-size: 40px;
+            padding: 0 4px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        h4 {
+            @include font($gray-dark, 500, 18px, 90%);
+        }
+    }
+}

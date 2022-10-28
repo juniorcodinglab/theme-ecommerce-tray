@@ -1,0 +1,57 @@
+{
+  "name": "layoutcowboys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-home": "gulp Home",
+    "watch-catalog": "gulp Catalog",
+    "watch-search": "gulp Search",
+    "watch-product": "gulp Product",
+    "watch-login": "gulp Login",
+    "watch-register": "gulp Register",
+    "watch-success-register": "gulp SuccessRegister",
+    "watch-customer": "gulp Customer",
+    "watch-change-password": "gulp ChangePassword",
+    "watch-how-to-by": "gulp HowToBy",
+    "watch-contact": "gulp Contact",
+    "watch-shipping": "gulp Shipping",
+    "watch-payment": "gulp Payment",
+    "watch-exchange-policy": "gulp ExchangePolicy",
+    "watch-privacy": "gulp Privacy",
+    "watch-about-cowboys": "gulp AboutCowboys",
+    "watch-news-search": "gulp NewsSearch",
+    "watch-news": "gulp News",
+    "watch": "gulp Build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorcesar001/cowboys-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/juniorcesar001/cowboys-2022",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "sass": "^1.43.4"
+  },
+  "bugs": {
+    "url": "https://github.com/juniorcesar001/cowboys-2022/issues"
+  },
+  "description": "",
+  "dependencies": {
+    "remixicon": "^2.5.0"
+  }
+}

@@ -1,0 +1,15 @@
+&__main {
+    padding: 25px 0;
+
+    @include for-phone-only {
+        padding: 0;
+    }
+    .d-flex {
+        align-items: center;
+        height: 100%;
+    }
+    
+    
+    @import "main/header-main-desk";
+    @import "main/header-main-mob";
+}

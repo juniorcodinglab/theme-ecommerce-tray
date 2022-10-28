@@ -1,0 +1,118 @@
+:root {
+    color-scheme: light;
+  }
+  
+  @keyframes ripple {
+      from {
+          opacity: 1;
+          transform: scale(0);
+      }
+      to {
+          opacity: 0;
+          transform: scale(10);
+      }
+  }
+  
+  a {
+      &:hover {
+          text-decoration: none;
+      }
+  }
+  button {
+      &:focus {
+          outline: none;
+      }
+  }
+
+  .modal-open {
+      header, footer, & > section > *:not(.modal) {
+          filter: blur(1px);
+      }
+  }
+  
+  .modal-backdrop{
+      .show {
+          opacity: 0.7;
+      }
+  }
+  
+  .ui-helper-hidden-accessible {
+      display: none;
+  }
+  
+  body {
+      font-family: "Inter";
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+  
+      .container-fluid {
+          max-width: 1400px;
+      }
+  
+      [class^="icon-"], [class*=" icon-"] {
+          display: inherit;
+      }
+  
+      p {
+          border-bottom: none;
+          padding: 0;
+      }
+  
+      input[type=text], input[type=email], input[type=password], input[type=tel], select, textarea {
+          width: 100%;
+          font-size: 13px;
+          color: $gray-light;
+          border: 1px solid $gray-light;
+          padding: 10px 15px;
+          border-radius: 2px;
+          background: white;
+          outline: none;
+      }
+  
+      .form-group {
+          margin-bottom: 20px;
+      }
+  
+      .slider:not(.slick-initialized) {
+          display: none;
+      }
+  
+      .slick-slide {
+          user-select: text;
+      }
+
+  
+      .ui-menu.ui-widget {
+          font-family: "Inter";
+          font-size: 14px;
+          max-height: 192px;
+          overflow-x: hidden;
+          overflow-y: auto;
+      }
+  
+      span.ripple-effect {
+          position: absolute; 
+          width: 100px; 
+          height: 100px; 
+          margin-top: -50px; 
+          margin-left: -50px; 
+          border-radius: 50%; 
+          animation: ripple 1s; 
+          opacity: 0;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .container-fluid {
+          padding-right: 30px;
+          padding-left: 30px;
+      }
+  
+      .emblems:not(.slick-initialized) {
+          display: none;
+      }
+  }
+  
+  

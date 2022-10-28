@@ -1,0 +1,32 @@
+&__showcases {
+    margin-top: 60px;
+    .slick-arrow {
+        top: calc(25% - 11px) !important;
+    }
+
+    @include for-desktop-only {
+        .slick-slide {
+            margin: 0 10px;
+        }
+        .slick-list {
+            margin: 0 -10px;
+        }
+    }
+
+    &-slide {
+        display: flex;
+        justify-content: space-between;
+    
+        @import "../showcases/showcase-item";
+    }
+
+    @media (max-width: 800px) {
+        .slick-arrow.slick-next {
+            right: -15px !important;
+        }
+        .slick-arrow.slick-prev {
+            left: -15px !important;
+        }
+    }
+
+}
